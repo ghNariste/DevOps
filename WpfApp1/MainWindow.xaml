@@ -1,0 +1,15 @@
+﻿<Window x:Class="WordleGame.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Wordle Game" Height="350" Width="500">
+    <Grid>
+        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+            <TextBlock Text="Guess the 5-letter Word!" Margin="0 0 0 10" HorizontalAlignment="Center"/>
+            <TextBox x:Name="TextBox" Width="200" Margin="0 0 0 10"/>
+            <Button Content="Guess" Width="80" Click="GuessButton_Click"/>
+            <TextBlock x:Name="FeedbackTextBlock" Margin="0 20 0 0"/>
+            <Button Content="New Game" Width="80" Click="NewGameButton_Click" Margin="0 20 0 0"/>
+        </StackPanel>
+    </Grid>
+</Window>
+
